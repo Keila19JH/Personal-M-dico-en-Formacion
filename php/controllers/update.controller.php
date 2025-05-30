@@ -67,13 +67,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // 1. Actualizar dias_laborales
     $Data_dias_laborales = [
-        'lunes'     => $_POST['lunes'] ?? '',
-        'martes'    => $_POST['martes'] ?? '',
-        'miercoles' => $_POST['miercoles'] ?? '',
-        'jueves'    => $_POST['jueves'] ?? '',
-        'viernes'   => $_POST['viernes'] ?? '',
-        'sabado'    => $_POST['sabado'] ?? '',
-        'domingo'   => $_POST['domingo'] ?? ''
+        'lunes'     => $_POST['lunes']      ?? 'No labora',
+        'martes'    => $_POST['martes']     ?? 'No labora',
+        'miercoles' => $_POST['miercoles']  ?? 'No labora',
+        'jueves'    => $_POST['jueves']     ?? 'No labora',
+        'viernes'   => $_POST['viernes']    ?? 'No labora',
+        'sabado'    => $_POST['sabado']     ?? 'No labora',
+        'domingo'   => $_POST['domingo']    ?? 'No labora'
     ];
 
     $Result_dias_laborales = $connectionDB->updateData(
@@ -100,30 +100,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     // 4. Actualizar capacitacion
-    $interculturalidad                      = $_POST['interculturalidad'] ?? '';
-    $fechaExpedicion_interculturalidad      = $_POST['fechaExpedicion_interculturalidad'] ?? '';
-    $higienemanos                           = $_POST['higienemanos'] ?? '';
-    $fechaExpedicion_higienemanos           = $_POST['fechaExpedicion_higienemanos'] ?? '';
-    $residuoshospitalarios                  = $_POST['residuoshospitalarios'] ?? '';
-    $fechaExpedicion_residuoshospitalarios  = $_POST['fechaExpedicion_residuoshospitalarios'] ?? '';
-    $seguridadpaciente                      = $_POST['seguridadpaciente'] ?? '';
-    $fechaExpedicion_seguridadpaciente      = $_POST['fechaExpedicion_seguridadpaciente'] ?? '';
-    $cuidadopaliativo                       = $_POST['cuidadopaliativo'] ?? '';
-    $fechaExpedicion_cuidadopaliativo       = $_POST['fechaExpedicion_cuidadopaliativo'] ?? '';
-    $combateincendios                       = $_POST['combateincendios'] ?? '';
-    $fechaExpedicion_combateincendios       = $_POST['fechaExpedicion_combateincendios'] ?? '';
-    $evaluacioncalidad                      = $_POST['evaluacioncalidad'] ?? '';
-    $fechaExpedicion_evaluacioncalidad      = $_POST['fechaExpedicion_evaluacioncalidad'] ?? '';
-    $tratodigno                             = $_POST['tratodigno'] ?? '';
-    $fechaExpedicion_tratodigno             = $_POST['fechaExpedicion_tratodigno'] ?? '';
-    $reanimacion                            = $_POST['reanimacion'] ?? '';
-    $fechaExpedicion_reanimacion            = $_POST['fechaExpedicion_reanimacion'] ?? '';
-    $saludmental                            = $_POST['saludmental'] ?? '';
-    $fechaExpedicion_saludmental            = $_POST['fechaExpedicion_saludmental'] ?? '';
-    $emergenciasydesastres                  = $_POST['emergenciasydesastres'] ?? '';
-    $fechaExpedicion_emergenciasydesastres  = $_POST['fechaExpedicion_emergenciasydesastres'] ?? '';
-    $procesoslimpieza                       = $_POST['procesoslimpieza'] ?? '';
-    $fechaExpedicion_procesoslimpieza       = $_POST['fechaExpedicion_procesoslimpieza'] ?? '';
+    $interculturalidad                      = $_POST['interculturalidad']                       ?? 'No realizado';
+    $fechaExpedicion_interculturalidad      = $_POST['fechaExpedicion_interculturalidad']       ?? '';
+    $higienemanos                           = $_POST['higienemanos']                            ?? 'No realizado';
+    $fechaExpedicion_higienemanos           = $_POST['fechaExpedicion_higienemanos']            ?? '';
+    $residuoshospitalarios                  = $_POST['residuoshospitalarios']                   ?? 'No realizado';
+    $fechaExpedicion_residuoshospitalarios  = $_POST['fechaExpedicion_residuoshospitalarios']   ?? '';
+    $seguridadpaciente                      = $_POST['seguridadpaciente']                       ?? 'No realizado';
+    $fechaExpedicion_seguridadpaciente      = $_POST['fechaExpedicion_seguridadpaciente']       ?? '';
+    $cuidadopaliativo                       = $_POST['cuidadopaliativo']                        ?? 'No realizado';
+    $fechaExpedicion_cuidadopaliativo       = $_POST['fechaExpedicion_cuidadopaliativo']        ?? '';
+    $combateincendios                       = $_POST['combateincendios']                        ?? 'No realizado';
+    $fechaExpedicion_combateincendios       = $_POST['fechaExpedicion_combateincendios']        ?? '';
+    $evaluacioncalidad                      = $_POST['evaluacioncalidad']                       ?? 'No realizado';
+    $fechaExpedicion_evaluacioncalidad      = $_POST['fechaExpedicion_evaluacioncalidad']       ?? '';
+    $tratodigno                             = $_POST['tratodigno']                              ?? 'No realizado';
+    $fechaExpedicion_tratodigno             = $_POST['fechaExpedicion_tratodigno']              ?? '';
+    $reanimacion                            = $_POST['reanimacion']                             ?? 'No realizado';
+    $fechaExpedicion_reanimacion            = $_POST['fechaExpedicion_reanimacion']             ?? '';
+    $saludmental                            = $_POST['saludmental']                             ?? 'No realizado';
+    $fechaExpedicion_saludmental            = $_POST['fechaExpedicion_saludmental']             ?? '';
+    $emergenciasydesastres                  = $_POST['emergenciasydesastres']                   ?? 'No realizado';
+    $fechaExpedicion_emergenciasydesastres  = $_POST['fechaExpedicion_emergenciasydesastres']   ?? '';
+    $procesoslimpieza                       = $_POST['procesoslimpieza']                        ?? 'No realizado';
+    $fechaExpedicion_procesoslimpieza       = $_POST['fechaExpedicion_procesoslimpieza']        ?? '';
 
 
     if ( $interculturalidad === 'No' ) {
@@ -264,10 +264,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'RFC'                    => $_POST['RFC'] ?? '',
         'guarderia'              => $_POST['guarderia'] ?? '',
         'tiempo_guarderia'       => $_POST['tiempo_guarderia'] ?? '',
-        'childrens_1'            => $_POST['childrens_1'] ?? '',
-        'childrens_2'            => $_POST['childrens_2'] ?? '',
-        'childrens_3'            => $_POST['childrens_3'] ?? '',
-        'childrens_4'            => $_POST['childrens_4'] ?? '',
+        'childrens_1'            => $_POST['childrens_1'] ?? 'NS',
+        'childrens_2'            => $_POST['childrens_2'] ?? 'NS',
+        'childrens_3'            => $_POST['childrens_3'] ?? 'NS',
+        'childrens_4'            => $_POST['childrens_4'] ?? 'NS',
         'contacto_emergencia'    => $_POST['contacto_emergencia'] ?? '',
         'contacto'               => $_POST['contacto'] ?? '',
         'no_contacto_emergencia' => $_POST['no_contacto_emergencia'] ?? '',
