@@ -51,7 +51,7 @@ export const editForm = () => {
 
         try {
             const response = await httpClients.post( url, formData );
-            console.log("Respuesta del servidor:", response);
+            // console.log("Respuesta del servidor:", response);
 
             hideLoadingOverlay();
 
@@ -67,7 +67,7 @@ export const editForm = () => {
             }
         } catch ( error ) {
             hideLoadingOverlay();
-            console.error( 'Error en la solicitud :/ :', error );
+            // console.error( 'Error en la solicitud :/ :', error );
             setAlerts.errorAlert( 'Hubo un error al enviar la solicitud' );
         }
     });

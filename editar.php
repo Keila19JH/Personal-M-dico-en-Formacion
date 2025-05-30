@@ -315,7 +315,7 @@ include('php/controllers/edit.controller.php');
 
 
                 <div class="col-md-8">
-                  <strong>Días laborales</strong>
+                  <strong>Días de Servicio</strong>
                   <div class="checkbox-container">
                   <input type="hidden" id="id_dias_laborables" name="id_dias_laborables" value="<?php echo $id_dias_laborables; ?>">
                   

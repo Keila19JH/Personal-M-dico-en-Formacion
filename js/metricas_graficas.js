@@ -4,27 +4,20 @@ $.ajax({
     dataType: 'json',
     success: function (data) {
 
-        let informacionAcademica = data.informacion_academica[0];
+        // let informacionAcademica = data.informacion_academica[0];
+        // let genero = data.genero;
+
+        // Usa todo el array de escuelas:
+        let informacionAcademica = data.informacion_academica;
         let genero = data.genero;
 
-        console.log(genero)
-        let especialidad = data.especialidad
+        // Prepara los datos para la gráfica de escuelas
+        let data1 = informacionAcademica.map(item => ({
+            titulo: item.escuela_procedencia,
+            value: parseInt(item.conteo)
+        }));
 
-        let data1 =[
-            {titulo: 'Técnico', value: parseInt(informacionAcademica.total_grado_tecnico)},
-            {titulo: 'Post-Técnico', value: parseInt(informacionAcademica.total_grado_posttecnico)},
-            {titulo: 'Licenciatura', value: parseInt(informacionAcademica.total_grado_licenciatura)},
-            {titulo: 'Especialidad', value: parseInt(informacionAcademica.total_grado_especialidad)},
-            {titulo: 'Maestría', value: parseInt(informacionAcademica.total_grado_maestria)},
-            {titulo: 'Doctorado', value: parseInt(informacionAcademica.total_grado_doctorado)}
-        ]
-        // Llamar a la función para crear la gráfica de barras con los datos preparados
         crearGraficaBarras("chartdiv", data1);
-        
-        // let data2 =[
-        //     {titulo: 'H', value: parseInt(genero[0][1])},
-        //     {titulo: 'M', value: parseInt(genero[1][1])}
-        // ]
 
 
         let data2 = genero.map(item => ({

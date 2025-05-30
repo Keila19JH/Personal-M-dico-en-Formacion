@@ -164,26 +164,7 @@ $username = $_SESSION['valid_user'];
           </div>
           <div class="body-container">
             <div class="titulo-personal">
-              <h6 class="bi bi-person-fill-add"> Resumen Especialidad</h6>
-            </div> <br>
-            <div id="chartdiv2"></div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <div class="modal-content">
-          <div class="edicion-personal">
-            <h5 class="modal-title text-center">Datos Actuales</h5>
-          </div>
-          <div class="body-container">
-            <div class="titulo-personal">
-              <h6 class="bi bi-person-fill-add"> Resumen Genero</h6>
+              <h6 class="bi bi-person-fill-add"> Resumen Género</h6>
             </div> <br>
             <div id="chartdiv1"></div>
 

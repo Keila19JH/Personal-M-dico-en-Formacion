@@ -125,8 +125,37 @@ require ('php/controllers/ver_personal.controller.php');
                             <th><?php echo $no_contacto_emergencia ?></th>
                         </tr>
 
-                    </table>
+                        <tr>
+                            <td>Guardería</td>
+                            <th><?php echo $guarderia ?></th>
+                        </tr>
 
+                        <tr>
+                            <td>Registro de Hora Guardería</td>
+                            <th><?php echo $tiempo_guarderia ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Hijos de 0-5 años</td>
+                            <th><?php echo $childrens_1 ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Hijos de 6-10 años</td>
+                            <th><?php echo $childrens_2 ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Hijos de 11-15 años</td>
+                            <th><?php echo $childrens_3 ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Hijos de 11-15 años</td>
+                            <th><?php echo $childrens_4 ?></th>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
         </div>
@@ -140,12 +169,22 @@ require ('php/controllers/ver_personal.controller.php');
                     
                     <table class="tabla-datos">
                         <tr>
-                            <th>INFORMACIÓN CONTRATO</th>
+                            <th>INFORMACIÓN CONTACTO</th>
                         </tr>
 
                         <tr>
-                            <td>No. Empleado</td>
+                            <td>No. Pasante Médico</td>
                             <th><?php echo $noempleado ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Fecha de Ingreso</td>
+                            <th><?php echo $fechaIngreso ?></th>
+                        </tr>
+                        
+                        <tr>
+                            <td>Año que está cursando</td>
+                            <th><?php echo $ayo_curso ?></th>
                         </tr>
         
                         <tr>
@@ -154,8 +193,13 @@ require ('php/controllers/ver_personal.controller.php');
                         </tr>
                         
                         <tr>
-                            <td>Días Laborales</td>
+                            <td>Días de Servicio</td>
                             <th><?php echo $diasLaborales ?></th>
+                        </tr>
+
+                        <tr>
+                            <td>Servicio</td>
+                            <th><?php echo $servicio ?></th>
                         </tr>
 
                         <tr>
@@ -178,14 +222,13 @@ require ('php/controllers/ver_personal.controller.php');
                         <tr>
                             <th>INFORMACIÓN ACADÉMICA</th>
                         </tr>
-                        
+    
                         <tr>
                             <td>Escuela de procedencia</td>
                             <th><?php echo $escuela_procedencia ?></th>
                             <td>Observaciones</td>
                             <th><?php echo $observaciones ?></th>
                         </tr>
-
 
                     </table>
                 </div>
@@ -276,21 +319,23 @@ require ('php/controllers/ver_personal.controller.php');
         </div>
     </div> -->
 
-    <!-- <div class="container mt-5">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-sm-12">
                 <div class="datos-container d-flex align-items-center">
 
                     <table class="tabla-datos">
-
-                        <thead>
-                            <tr>
-                                <th scope="col">Nombre del Curso</th>
-                                <th scope="col">¿Realizó?</th>
-                                <th scope="col">Fecha Expedición</th>
-                            </tr>
-                        </thead>
-                        
+                       
+                        <tr>
+                            <th>CAPACITACIONES HRAEI</th>
+                        </tr>
+                    
+                        <tr>
+                            <th s>Nombre del Curso</th>
+                            <th scope="col">¿Realizó?</th>
+                            <th scope="col">Fecha Expedición</th>
+                        </tr>
+                       
                         <tbody>
                             <tr>
                                 <td scope="row">Interculturalidad</td>
@@ -370,7 +415,7 @@ require ('php/controllers/ver_personal.controller.php');
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
   <br>
   <br>

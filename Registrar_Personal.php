@@ -255,7 +255,7 @@ require ('php/controllers/datos.controller.php');
 
 
                 <div class="col-md-8">
-                  <strong>Días laborales</strong>
+                  <strong>Días de Servicio</strong>
                   <div class="checkbox-container">
                     <div class="form-check form-check-inline">
                       <input class="form-check-input" type="checkbox" id="lunes" name="lunes" value="Lunes">

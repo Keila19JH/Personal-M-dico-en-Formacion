@@ -35,12 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
                 ON ctr.dias_laborables = dl.id_dias_laborables
                 WHERE dp.id_enfermero = '$id_enfermero'";
 
-
     $AllData = $connectionDB->getRows($query);
 
     if (!empty($AllData)) {
         foreach ($AllData as $data) {
-
             $id_enfermero            = $data['id_enfermero'];
             $curp                    = $data['curp'];
             $apellidoPaterno         = $data['apellidoPaterno'];

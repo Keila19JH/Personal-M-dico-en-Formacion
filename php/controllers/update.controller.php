@@ -286,7 +286,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ]);
         exit;
     }
-    file_put_contents('debug.log', "Actualizó personal\n", FILE_APPEND);
+    // file_put_contents('debug.log', "Actualizó personal\n", FILE_APPEND);
 
     $Result_datos_personal = $connectionDB->updateData(
         'datos_personal',
