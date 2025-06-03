@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     // file_put_contents('debug.log', "Llegó a validación de IDs\n", FILE_APPEND);
 
-     // Definimos rutas unificadas
+    // Definimos rutas unificadas
     $uploadDirServer = __DIR__ . '/../../uploads/';  // ruta absoluta en el servidor
     $uploadDirWeb    = 'uploads/';                  // ruta pública para el HTML
 

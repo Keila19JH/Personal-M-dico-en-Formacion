@@ -16,7 +16,7 @@ export const editForm = () => {
 
         // Obtener el archivo
         let file = formData.get( 'foto' );
-        if (file) {
+        if (file && file.name) {
             // Verificar tipo de archivo
             const validFileTypes = ["image/jpeg", "image/png", "image/jpg"];
             if (!validFileTypes.includes(file.type)) {
@@ -32,9 +32,6 @@ export const editForm = () => {
             let apellidoPaterno = formData.get("apellidoPaterno");
             let apellidoMaterno = formData.get("apellidoMaterno");
             let nombre = formData.get("nombre");
-
-            // Obtener el nombre original del archivo
-            let fileName = file.name;
 
             // Obtener la extensión del archivo
             let fileExtension = fileName.split(".").pop();
